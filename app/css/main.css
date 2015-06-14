@@ -1,0 +1,25 @@
+body {
+ background-color: silver;
+}
+
+
+
+
+.container {
+  color: purple;
+  margin-left: 415px;
+  margin-top: 200px;
+  font-size: 23px;
+  font-family: monospace;
+}
+
+
+
+.complete {
+  text-decoration: line-through;
+}
+
+h1  {
+  font-size: 100px;
+
+}
