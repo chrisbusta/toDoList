@@ -2,12 +2,27 @@
   'use strict';
 
 var Todo = function(options){
-
   var args = options || {};
   this.task = args.task;
   this.status = 'open';
 
 };
+Todo.prototype.greeting = function () {
+    var str = this.task + ' is '  + this.status;
+        str += '<br /><br />';
+    console.log(str);
+};
+
+
+
+// Todo.prototype.toggle = function () {
+
+//     if (this.status === 'open') {
+//         this.status = 'closed';
+//     }else (this.status = 'open');
+// };
+
+//  Todo.prototype.add = todoform;
 
 var bin = [];
 
@@ -59,7 +74,19 @@ $('#remove-button').on('click', function(){
   });
 
 });
+// Todo.prototype.toggle = function () {
 
+//     if (this.status === 'open') {
+//         this.status = 'closed';
+//     }else (this.status = 'open');
+// };
+
+// function declarePrototype() {
+//   if (storage.length > 8) {
+//     Todo.prototype.isEmergent = true;
+//     console.log("MAN that's a lot of stuff");
+//   }
+// }
 
 
 
